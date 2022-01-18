@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 40px;
+}
+.hero_sec{
+    background-image:linear-gradient(120deg, #f6d465b6 0%, #fd9f85b6 100%), url("download.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
+}
+.hero_sec .content0{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero_sec .content0 .heading{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.hero_sec .content0 .info{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.hero_sec .content0 .btn{
+    font-size: 20px;
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color: rgb(0, 70, 0);
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    background-color: white;
+}
+.hero_sec .content0 .btn:hover {
+    animation-name: ex;
+    animation-duration: 1s;
+}
+@keyframes ex {
+    30%{ outline: 15px solid rgba(255, 255, 255, 0.726);}
+    60%{  
+        outline-offset: 15px;
+        outline: 15px solid rgba(255, 255, 255, 0.486);}
+    90%{ 
+        outline-offset: 30px;
+        outline: 15px solid rgba(255, 255, 255, 0.192);}
+}
+.second_sec{
+    text-align: center;
+    background-color: #f6f6f6;
+     min-height: 125vh;
+    margin-top: -25vh;
+    padding-top: 35vh;
+}
+.second_sec .heading0{
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.second_sec .content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.second_sec .content .info{
+    width: 50%;
+    height: 85vh;
+    padding: 30px;
+}
+.second_sec .content .info .myInfo{
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.second_sec .content .pic{
+    width: 50%;
+    height: 85vh;
+    padding: 30px;
+}
+.second_sec .content .myInfo{
+    height: 100%;
+}
+.second_sec .content .myPic{
+    height: 100%;
+    position: relative;
+}
+
+.second_sec .content .myPic .divPic{
+    height: 200px;
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: absolute;
+    cursor: pointer;
+    transition: .3s transform;
+}
+.second_sec .content .myPic .divPic img{
+    height: 100%;
+    width: 100%;
+}
+.second_sec .content .myPic .pic0{
+    left: 50px;
+    top: 0;
+    z-index: 0;
+}
+.second_sec .content .myPic .pic1{
+    left: 230px;
+    top: 25px;
+    z-index: 0;
+}
+.second_sec .content .myPic .pic2{
+    left: 120px;
+    top: 120px;
+    z-index: 0;
+}
+.second_sec .content .myPic .divPic:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    outline: 15px solid rgb(255, 115, 0);
+    outline-offset: 20px;
+}
+.second_sec .content .myPic:hover .divPic:not(:hover){
+    transform: scale(.95);
+}
+.login{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .content{
+    width: 70%;
+    height: 60vh;
+    background-image: url(main0.jpg);
+    background-size: cover;
+}
+.login .content .wrapper{
+    width: 65%;
+    height: 100%;
+    background-image: linear-gradient(105deg,rgba(255, 255, 255, 0.805) 0%,rgba(255, 255, 255, 0.805) 70%,transparent 70%,transparent 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.login .content .wrapper .log input{
+    display: block;
+    border: none;
+    height: 40px;
+    width: 300px;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.login .content .wrapper .log h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.login .content .wrapper .log button{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-size: 18px;
+    width: 130px;
+    padding: 7px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+}
+.Third_sec{
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color:#f6f6f6 ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Third_sec .wrapper{
+    height: 80vh;
+    width: 30%;
+    position: relative;
+}
+.Third_sec .myDiv0{
+    width: 100%;
+    height: 100%;
+    transition: 2s background-image,2s transform;
+    position: absolute;
+}
+.Third_sec .myD0{
+    background-image: url("main.jpg");
+    background-size: cover;
+}
+.Third_sec .myD1{
+    background-image: url("main1.jpg");
+    background-size: cover;
+}
+.Third_sec .myD2{
+    background-image: url("main2.jpg");
+    background-size: cover;
+}
+.Third_sec .myDiv1 h1{
+    transform: rotateY(180deg);
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: rgb(133, 255, 133);
+}
+.Third_sec .myDiv1 p{
+    transform: rotateY(180deg);
+    font-size: 20px;
+    line-height: 31px;
+    text-transform: capitalize;
+    color: white;
+}
+.Third_sec .myDiv1{
+    height: 80vh;
+    width: 100%;
+    transition: 2s background-image,2s transform;
+    position: absolute; 
+    padding: 25px;
+}
+.myDiv01{
+    background-image:linear-gradient(#f48c06,#8d5000);
+ 
+}
+.myDiv2{
+    background-image:linear-gradient(#e70017,#6a040f);
+}
+.myDiv3{
+    background-image:linear-gradient(#001cbd,#03071e);
+}
+.Third_sec .wrapper:hover .myDiv0{
+transform: rotateY(180deg);
+animation-name: ex1;
+animation-duration: 1.2s;
+z-index: 0;
+}
+@keyframes ex1 {
+    0%{
+        z-index: 1;
+    }
+    49%{
+        z-index: 1;
+    }
+    50%{
+        z-index: 0;
+    }
+}
+.Third_sec .wrapper:hover .myDiv1{
+transform: rotateY(180deg);
+animation-name: ex2;
+animation-duration: 1.2s;
+z-index: 1;
+}
+@keyframes ex2 {
+    0%{
+        z-index: 0;
+    }
+    49%{
+        z-index: 0;
+    }
+    50%{
+        z-index: 1;
+    }
+}
